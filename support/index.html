@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AtiOlea Destek</title>
+<style>
+  :root {
+    --bg: #fcfbf6;
+    --ink: #242b17;
+    --ink-soft: #4d5640;
+    --brand: #46551f;
+    --line: rgba(36, 43, 23, 0.14);
+    --pill-bg: rgba(36, 43, 23, 0.06);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1b1d13;
+      --ink: #f2f0e4;
+      --ink-soft: #c3c6b3;
+      --brand: #9bb85f;
+      --line: rgba(242, 240, 228, 0.16);
+      --pill-bg: rgba(242, 240, 228, 0.08);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #1b1d13;
+    --ink: #f2f0e4;
+    --ink-soft: #c3c6b3;
+    --brand: #9bb85f;
+    --line: rgba(242, 240, 228, 0.16);
+    --pill-bg: rgba(242, 240, 228, 0.08);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    padding-inline: 20px;
+    padding-block: 60px 80px;
+    margin: 0;
+  }
+
+  .page {
+    max-width: 620px;
+    margin-inline: auto;
+  }
+
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 26px;
+  }
+
+  .wordmark {
+    height: 44px;
+    width: auto;
+    flex: none;
+  }
+
+  .lang-toggle {
+    display: flex;
+    gap: 2px;
+    background: var(--pill-bg);
+    border-radius: 999px;
+    padding: 3px;
+    flex: none;
+  }
+  .lang-toggle button {
+    font: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 999px;
+    background: transparent;
+    color: var(--ink-soft);
+    cursor: pointer;
+  }
+  .lang-toggle button[aria-pressed="true"] {
+    background: var(--brand);
+    color: var(--bg);
+  }
+  .lang-toggle button:focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: 2px;
+  }
+
+  h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(26px, 5vw, 34px);
+    line-height: 1.15;
+    text-wrap: balance;
+    margin: 0 0 6px;
+  }
+
+  .meta {
+    color: var(--ink-soft);
+    font-size: 14px;
+    margin-bottom: 36px;
+  }
+
+  p {
+    margin: 0 0 20px;
+    max-width: 60ch;
+  }
+  p:last-of-type { margin-bottom: 0; }
+
+  .contact-card {
+    margin-top: 8px;
+    padding: 20px 22px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .contact-card .label {
+    font-size: 12.5px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 4px;
+  }
+  .contact-card a {
+    color: var(--brand);
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .contact-card a:hover { text-decoration: underline; }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="page">
+  <div class="top">
+    <img class="wordmark" src="../olea_logo.png" alt="AtiOlea">
+    <div class="lang-toggle">
+      <button type="button" id="btn-tr" aria-pressed="true">TR</button>
+      <button type="button" id="btn-en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+
+  <div id="content-tr">
+    <h1>Destek</h1>
+    <p class="meta">Ati Kurumsal Yazılım Ltd. Şti.</p>
+
+    <p>AtiOlea uygulamasını kullanırken bir sorunla karşılaşırsanız, bir hata bildirmek isterseniz ya da sorularınız varsa aşağıdaki adresten bize ulaşabilirsiniz. Size en kısa sürede dönüş yapmaya çalışırız.</p>
+
+    <div class="contact-card">
+      <div>
+        <div class="label">E-posta</div>
+        <a href="mailto:zelihainann@gmail.com">zelihainann@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="content-en" hidden>
+    <h1>Support</h1>
+    <p class="meta">Ati Kurumsal Yazılım Ltd. Şti.</p>
+
+    <p>If you run into an issue while using AtiOlea, want to report a bug, or have any questions, reach us at the address below. We aim to respond as soon as possible.</p>
+
+    <div class="contact-card">
+      <div>
+        <div class="label">Email</div>
+        <a href="mailto:zelihainann@gmail.com">zelihainann@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  var trBtn = document.getElementById('btn-tr');
+  var enBtn = document.getElementById('btn-en');
+  var trBlock = document.getElementById('content-tr');
+  var enBlock = document.getElementById('content-en');
+
+  function setLang(lang) {
+    trBlock.hidden = lang !== 'tr';
+    enBlock.hidden = lang !== 'en';
+    trBtn.setAttribute('aria-pressed', String(lang === 'tr'));
+    enBtn.setAttribute('aria-pressed', String(lang === 'en'));
+    try { localStorage.setItem('atiolea-support-lang', lang); } catch (e) {}
+  }
+
+  trBtn.addEventListener('click', function () { setLang('tr'); });
+  enBtn.addEventListener('click', function () { setLang('en'); });
+
+  var saved = 'tr';
+  try { saved = localStorage.getItem('atiolea-support-lang') || 'tr'; } catch (e) {}
+  setLang(saved);
+})();
+</script>
+</body>
+</html>
