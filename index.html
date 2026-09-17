@@ -1,0 +1,192 @@
+<title>AtiOlea Gizlilik Politikası</title>
+<style>
+  :root {
+    --bg: #fcfbf6;
+    --ink: #242b17;
+    --ink-soft: #4d5640;
+    --brand: #46551f;
+    --line: rgba(36, 43, 23, 0.14);
+    --pill-bg: rgba(36, 43, 23, 0.06);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1b1d13;
+      --ink: #f2f0e4;
+      --ink-soft: #c3c6b3;
+      --brand: #9bb85f;
+      --line: rgba(242, 240, 228, 0.16);
+      --pill-bg: rgba(242, 240, 228, 0.08);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #1b1d13;
+    --ink: #f2f0e4;
+    --ink-soft: #c3c6b3;
+    --brand: #9bb85f;
+    --line: rgba(242, 240, 228, 0.16);
+    --pill-bg: rgba(242, 240, 228, 0.08);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    padding-inline: 20px;
+    padding-block: 60px 80px;
+  }
+
+  .page {
+    max-width: 620px;
+    margin-inline: auto;
+  }
+
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 26px;
+  }
+
+  .wordmark {
+    height: 44px;
+    width: auto;
+    flex: none;
+  }
+
+  .lang-toggle {
+    display: flex;
+    gap: 2px;
+    background: var(--pill-bg);
+    border-radius: 999px;
+    padding: 3px;
+    flex: none;
+  }
+  .lang-toggle button {
+    font: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 999px;
+    background: transparent;
+    color: var(--ink-soft);
+    cursor: pointer;
+  }
+  .lang-toggle button[aria-pressed="true"] {
+    background: var(--brand);
+    color: var(--bg);
+  }
+  .lang-toggle button:focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: 2px;
+  }
+
+  h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(26px, 5vw, 34px);
+    line-height: 1.15;
+    text-wrap: balance;
+    margin: 0 0 6px;
+  }
+
+  .meta {
+    color: var(--ink-soft);
+    font-size: 14px;
+    margin-bottom: 36px;
+  }
+
+  p {
+    margin: 0 0 20px;
+    max-width: 60ch;
+  }
+  p:last-of-type { margin-bottom: 0; }
+
+  .contact {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-soft);
+    font-size: 15px;
+  }
+  .contact a { color: var(--brand); }
+
+  @media (max-width: 420px) {
+    .wordmark { height: 34px; }
+  }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+<div class="page">
+  <div class="top">
+    <img class="wordmark" src="olea_logo.png" alt="AtiOlea">
+    <div class="lang-toggle">
+      <button type="button" id="btn-tr" aria-pressed="true">TR</button>
+      <button type="button" id="btn-en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+
+  <div id="content-tr">
+    <h1>Gizlilik Politikası</h1>
+    <p class="meta">Son güncelleme: 17 Eylül 2026 · Ati Kurumsal Yazılım Ltd. Şti.</p>
+
+    <p>AtiOlea, zeytinyağı sıkım tesislerinin sıra takibi, tartım, satış ve cari hesap işlemlerini yönetmesi için Ati Kurumsal Yazılım Ltd. Şti. tarafından geliştirilmiş, yalnızca tesis tarafından yetkilendirilmiş personel tarafından kullanılan kurumsal bir mobil uygulamadır. Halka açık bir tüketici uygulaması değildir; uygulama, işletmenin kendi personeline tahsis ettiği bir hesapla giriş yapılarak kullanılır.</p>
+
+    <p>Uygulama, personelin oturum açabilmesi için kullanıcı adını, işlemleri kullanılan cihazla ilişkilendirmek için cihaza özel bir kimlik numarasını, sıkım ve satış kayıtları girilirken tesisin müşterilerine ait ad ve telefon numarasını, ayrıca tartım, satış tutarı ve cari bakiye gibi işlem kayıtlarını işler. Bu bilgilerin tamamı yalnızca uygulamanın temel işlevini yerine getirmek amacıyla tesisin kendi sunucusuna iletilir ve orada saklanır; reklam, pazarlama, analiz veya kullanıcı takibi amacıyla hiçbir veri toplanmaz ve uygulamada üçüncü taraf reklam ya da analiz yazılımı bulunmaz.</p>
+
+    <p>Toplanan bilgiler, tesisin kendi sunucu altyapısı dışında hiçbir üçüncü tarafla paylaşılmaz veya satılmaz. Oturum bilgisi cihazda iOS'un güvenli Keychain deposunda saklanır, düz metin olarak tutulmaz; erişim yalnızca tesis tarafından yetkilendirilmiş hesaplarla sınırlıdır. İşletme kayıtları, tesisin muhasebe ve operasyon ihtiyaçları sürdüğü müddetçe sunucuda tutulur; bir kaydın silinmesi talebi tesis yönetimi üzerinden değerlendirilir.</p>
+
+    <p>6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında, işlenen bilgilerinize erişme, düzeltilmesini veya silinmesini talep etme hakkınız bulunur. Uygulamanın veri işleme biçiminde bir değişiklik olması halinde bu sayfa güncellenir; en üstteki tarih son güncellemeyi gösterir.</p>
+
+    <p class="contact">Sorularınız için: <a href="mailto:zelihainann@gmail.com">zelihainann@gmail.com</a></p>
+  </div>
+
+  <div id="content-en" hidden>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: September 17, 2026 · Ati Kurumsal Yazılım Ltd. Şti.</p>
+
+    <p>AtiOlea is a corporate mobile app built by Ati Kurumsal Yazılım Ltd. Şti. for olive oil pressing facilities to manage queue tracking, weighing, sales, and current-account operations, used only by staff authorized by the facility. It is not a public consumer app; it is used by signing in with an account the business assigns to its own staff.</p>
+
+    <p>The app processes a staff member's username to sign in, a device-specific identifier to associate transactions with the device used, the facility's customers' name and phone number entered during pressing and sales records, and transaction records such as weighing results, sale amounts, and current-account balances. All of this is transmitted to and stored on the facility's own server solely to carry out the app's core function; no data is collected for advertising, marketing, analytics, or tracking, and the app contains no third-party advertising or analytics software.</p>
+
+    <p>Collected information is not shared with or sold to any third party outside the facility's own server infrastructure. Session data is stored on the device in iOS's secure Keychain, not as plain text; access is limited to accounts the facility has authorized. Business records are kept on the server for as long as the facility's accounting and operational needs require; a request to delete a record is handled through the facility's management.</p>
+
+    <p>Under Turkey's Personal Data Protection Law (KVKK) No. 6698, you have the right to access, correct, or request deletion of information processed about you. If the app's data practices change, this page will be updated; the date at the top reflects the most recent revision.</p>
+
+    <p class="contact">Questions: <a href="mailto:zelihainann@gmail.com">zelihainann@gmail.com</a></p>
+  </div>
+</div>
+
+<script>
+(function () {
+  var trBtn = document.getElementById('btn-tr');
+  var enBtn = document.getElementById('btn-en');
+  var trBlock = document.getElementById('content-tr');
+  var enBlock = document.getElementById('content-en');
+
+  function setLang(lang) {
+    trBlock.hidden = lang !== 'tr';
+    enBlock.hidden = lang !== 'en';
+    trBtn.setAttribute('aria-pressed', String(lang === 'tr'));
+    enBtn.setAttribute('aria-pressed', String(lang === 'en'));
+    try { localStorage.setItem('atiolea-privacy-lang', lang); } catch (e) {}
+  }
+
+  trBtn.addEventListener('click', function () { setLang('tr'); });
+  enBtn.addEventListener('click', function () { setLang('en'); });
+
+  var saved = 'tr';
+  try { saved = localStorage.getItem('atiolea-privacy-lang') || 'tr'; } catch (e) {}
+  setLang(saved);
+})();
+</script>
